@@ -1,3 +1,5 @@
+___Mac OS X native cocoa UI for SNMP utilities and MIB browser___
+
 Boobooksnmp2 is a Graphical interface that uses libnetsnmp that comes on Macs to display and query SNMP Objects. Main Features are:
 - Ability to read in mass of MIB files and display Objects in Tree format
 - Bookmarks of Objects, Agents, URLs
