@@ -1,0 +1,911 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB02FEFB1E88245F00E7E342 /* BookmarksTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB02FEFA1E88245F00E7E342 /* BookmarksTreeController.m */; };
+		EB02FEFE1E886A4E00E7E342 /* MIBTreeTreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB02FEFD1E886A4E00E7E342 /* MIBTreeTreeController.m */; };
+		EB14B4BE1E6E3089004D4F14 /* TabViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EB14B4BD1E6E3089004D4F14 /* TabViewItem.m */; };
+		EB1C87751E68BF7600E38915 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C87741E68BF7600E38915 /* AppDelegate.m */; };
+		EB1C87781E68BF7600E38915 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C87771E68BF7600E38915 /* main.m */; };
+		EB1C877A1E68BF7600E38915 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB1C87791E68BF7600E38915 /* Assets.xcassets */; };
+		EB1C877D1E68BF7600E38915 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB1C877B1E68BF7600E38915 /* MainMenu.xib */; };
+		EB1C87881E68BF7600E38915 /* boobooksnmp2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C87871E68BF7600E38915 /* boobooksnmp2Tests.m */; };
+		EB1C87931E68BF7600E38915 /* boobooksnmp2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB1C87921E68BF7600E38915 /* boobooksnmp2UITests.m */; };
+		EB270F5A1E7130B700199E17 /* QueryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB270F581E7130B700199E17 /* QueryTableViewController.m */; };
+		EB270F5B1E7130B700199E17 /* QueryTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB270F591E7130B700199E17 /* QueryTableViewController.xib */; };
+		EB270F5E1E71DAB500199E17 /* TabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB270F5D1E71DAB500199E17 /* TabViewController.m */; };
+		EB270F621E71E23500199E17 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB270F601E71E23500199E17 /* FileViewController.m */; };
+		EB270F631E71E23500199E17 /* FileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB270F611E71E23500199E17 /* FileViewController.xib */; };
+		EB2D01691E96E5C500C6CBEB /* MMTabBarView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2D01681E96E5C500C6CBEB /* MMTabBarView.framework */; };
+		EB2D016A1E96E5CE00C6CBEB /* MMTabBarView.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB2D01681E96E5C500C6CBEB /* MMTabBarView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EB2F32541E81D4FE00713DDF /* AgentBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB2F32531E81D4FE00713DDF /* AgentBoxViewController.m */; };
+		EB30DEA31E6BF90500247DFB /* BookmarksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB30DEA21E6BF90500247DFB /* BookmarksViewController.m */; };
+		EB87B0701E8A308D00D2F113 /* UrlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB87B06E1E8A308D00D2F113 /* UrlViewController.m */; };
+		EB87B0711E8A308D00D2F113 /* UrlViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB87B06F1E8A308D00D2F113 /* UrlViewController.xib */; };
+		EB87B0731E8A341800D2F113 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB87B0721E8A341800D2F113 /* WebKit.framework */; };
+		EB9AF0BA1E80C7D600D6613F /* Bbs2SnmpRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF0B91E80C7D600D6613F /* Bbs2SnmpRequestHandler.m */; };
+		EB9AF0BE1E80F64C00D6613F /* Bbs2SnmpOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9AF0BD1E80F64C00D6613F /* Bbs2SnmpOperation.m */; };
+		EB9E66731E932B8500201356 /* MibFilesArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB9E66721E932B8500201356 /* MibFilesArrayController.m */; };
+		EB9E66761E94077D00201356 /* GNUGPLv3.0.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EB9E66741E94077000201356 /* GNUGPLv3.0.html */; };
+		EBB2005C1E8F208C00A9E676 /* BOBK.ico in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200391E8F200600A9E676 /* BOBK.ico */; };
+		EBB2005D1E8F208C00A9E676 /* BooBookSNMP Help.helpindex in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB2003A1E8F200600A9E676 /* BooBookSNMP Help.helpindex */; };
+		EBB2005E1E8F208C00A9E676 /* BooBookSNMP_Help.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB2003B1E8F200600A9E676 /* BooBookSNMP_Help.html */; };
+		EBB2005F1E8F208C00A9E676 /* BooBookSNMP_Help_Menu.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB2003C1E8F200600A9E676 /* BooBookSNMP_Help_Menu.html */; };
+		EBB200601E8F208C00A9E676 /* BooBookSNMPAck.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB2003D1E8F200600A9E676 /* BooBookSNMPAck.html */; };
+		EBB200611E8F208C00A9E676 /* BooBookSNMPagentview.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB2003E1E8F200600A9E676 /* BooBookSNMPagentview.html */; };
+		EBB200621E8F208C00A9E676 /* BooBookSNMPBookmarks.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB2003F1E8F200600A9E676 /* BooBookSNMPBookmarks.html */; };
+		EBB200631E8F208C00A9E676 /* Boobooksnmp2GettingStarted.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200401E8F200600A9E676 /* Boobooksnmp2GettingStarted.html */; };
+		EBB200641E8F208C00A9E676 /* BooBookSNMPLicense.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200411E8F200600A9E676 /* BooBookSNMPLicense.html */; };
+		EBB200651E8F208C00A9E676 /* BooBookSNMPmibtree.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200421E8F200600A9E676 /* BooBookSNMPmibtree.html */; };
+		EBB200671E8F208C00A9E676 /* BooBookSNMPpreferences.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200441E8F200600A9E676 /* BooBookSNMPpreferences.html */; };
+		EBB2006A1E8F208C00A9E676 /* BooBookSNMPsnmpfunctions.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200471E8F200600A9E676 /* BooBookSNMPsnmpfunctions.html */; };
+		EBB2006B1E8F208C00A9E676 /* BooBookSNMPtabbedview.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200481E8F200600A9E676 /* BooBookSNMPtabbedview.html */; };
+		EBB2006C1E8F208C00A9E676 /* index.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200491E8F200600A9E676 /* index.html */; };
+		EBB200701E8F47F800A9E676 /* LogView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB2006E1E8F47F800A9E676 /* LogView.m */; };
+		EBB200711E8F47F800A9E676 /* LogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBB2006F1E8F47F800A9E676 /* LogView.xib */; };
+		EBB200751E919B0C00A9E676 /* Boobooksnmp2Home.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200731E91989300A9E676 /* Boobooksnmp2Home.html */; };
+		EBB200781E91A28D00A9E676 /* Boobooksnmp2ReportingIssues.html in CopyFiles */ = {isa = PBXBuildFile; fileRef = EBB200761E91A1E500A9E676 /* Boobooksnmp2ReportingIssues.html */; };
+		EBB2FFEF1E8EE98C00A9E676 /* MMTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB2FFEE1E8EE98C00A9E676 /* MMTabBarModel.m */; };
+		EBB5597B1E86EC1000A623DD /* BookmarksTreeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB5597A1E86EC1000A623DD /* BookmarksTreeItem.m */; };
+		EBB833711E68DFC100BD8B7A /* MIBTreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB833701E68DFC100BD8B7A /* MIBTreeViewController.m */; };
+		EBB833741E69DA0300BD8B7A /* Bbs2NetSnmp.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB833731E69DA0300BD8B7A /* Bbs2NetSnmp.m */; };
+		EBB833771E6A6AD000BD8B7A /* MIBTreeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB833761E6A6AD000BD8B7A /* MIBTreeItem.m */; };
+		EBB8337D1E6B6BF200BD8B7A /* libnetsnmp.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB8337C1E6B6BF200BD8B7A /* libnetsnmp.tbd */; };
+		EBDA9C341E958A8E0060725C /* OidTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBDA9C331E958A8E0060725C /* OidTabBarController.m */; };
+		EBF50FA71E786E0A00FF04DD /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBF50FA51E786E0A00FF04DD /* PreferencesViewController.m */; };
+		EBF50FA81E786E0A00FF04DD /* PreferencesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBF50FA61E786E0A00FF04DD /* PreferencesViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB1C87841E68BF7600E38915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1C87681E68BF7600E38915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1C876F1E68BF7600E38915;
+			remoteInfo = boobooksnmp2;
+		};
+		EB1C878F1E68BF7600E38915 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB1C87681E68BF7600E38915 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB1C876F1E68BF7600E38915;
+			remoteInfo = boobooksnmp2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EB2F325F1E81E22900713DDF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EB2D016A1E96E5CE00C6CBEB /* MMTabBarView.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBB2005B1E8F207100A9E676 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = BooBookSNMP.help;
+			dstSubfolderSpec = 7;
+			files = (
+				EB9E66761E94077D00201356 /* GNUGPLv3.0.html in CopyFiles */,
+				EBB200781E91A28D00A9E676 /* Boobooksnmp2ReportingIssues.html in CopyFiles */,
+				EBB200751E919B0C00A9E676 /* Boobooksnmp2Home.html in CopyFiles */,
+				EBB2005C1E8F208C00A9E676 /* BOBK.ico in CopyFiles */,
+				EBB2005D1E8F208C00A9E676 /* BooBookSNMP Help.helpindex in CopyFiles */,
+				EBB2005E1E8F208C00A9E676 /* BooBookSNMP_Help.html in CopyFiles */,
+				EBB2005F1E8F208C00A9E676 /* BooBookSNMP_Help_Menu.html in CopyFiles */,
+				EBB200601E8F208C00A9E676 /* BooBookSNMPAck.html in CopyFiles */,
+				EBB200611E8F208C00A9E676 /* BooBookSNMPagentview.html in CopyFiles */,
+				EBB200621E8F208C00A9E676 /* BooBookSNMPBookmarks.html in CopyFiles */,
+				EBB200631E8F208C00A9E676 /* Boobooksnmp2GettingStarted.html in CopyFiles */,
+				EBB200641E8F208C00A9E676 /* BooBookSNMPLicense.html in CopyFiles */,
+				EBB200651E8F208C00A9E676 /* BooBookSNMPmibtree.html in CopyFiles */,
+				EBB200671E8F208C00A9E676 /* BooBookSNMPpreferences.html in CopyFiles */,
+				EBB2006A1E8F208C00A9E676 /* BooBookSNMPsnmpfunctions.html in CopyFiles */,
+				EBB2006B1E8F208C00A9E676 /* BooBookSNMPtabbedview.html in CopyFiles */,
+				EBB2006C1E8F208C00A9E676 /* index.html in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EB02FEF91E88245F00E7E342 /* BookmarksTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksTreeController.h; sourceTree = "<group>"; };
+		EB02FEFA1E88245F00E7E342 /* BookmarksTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksTreeController.m; sourceTree = "<group>"; };
+		EB02FEFC1E886A4E00E7E342 /* MIBTreeTreeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIBTreeTreeController.h; sourceTree = "<group>"; };
+		EB02FEFD1E886A4E00E7E342 /* MIBTreeTreeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIBTreeTreeController.m; sourceTree = "<group>"; };
+		EB14B4BC1E6E3089004D4F14 /* TabViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewItem.h; sourceTree = "<group>"; };
+		EB14B4BD1E6E3089004D4F14 /* TabViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewItem.m; sourceTree = "<group>"; };
+		EB1C87701E68BF7600E38915 /* boobooksnmp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boobooksnmp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C87731E68BF7600E38915 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EB1C87741E68BF7600E38915 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		EB1C87771E68BF7600E38915 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EB1C87791E68BF7600E38915 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB1C877C1E68BF7600E38915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		EB1C877E1E68BF7600E38915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1C87831E68BF7600E38915 /* boobooksnmp2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boobooksnmp2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C87871E68BF7600E38915 /* boobooksnmp2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boobooksnmp2Tests.m; sourceTree = "<group>"; };
+		EB1C87891E68BF7600E38915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB1C878E1E68BF7600E38915 /* boobooksnmp2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boobooksnmp2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB1C87921E68BF7600E38915 /* boobooksnmp2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = boobooksnmp2UITests.m; sourceTree = "<group>"; };
+		EB1C87941E68BF7600E38915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB270F571E7130B700199E17 /* QueryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryTableViewController.h; sourceTree = "<group>"; };
+		EB270F581E7130B700199E17 /* QueryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryTableViewController.m; sourceTree = "<group>"; };
+		EB270F591E7130B700199E17 /* QueryTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QueryTableViewController.xib; sourceTree = "<group>"; };
+		EB270F5C1E71DAB500199E17 /* TabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabViewController.h; sourceTree = "<group>"; };
+		EB270F5D1E71DAB500199E17 /* TabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabViewController.m; sourceTree = "<group>"; };
+		EB270F5F1E71E23500199E17 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
+		EB270F601E71E23500199E17 /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		EB270F611E71E23500199E17 /* FileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FileViewController.xib; sourceTree = "<group>"; };
+		EB2D01681E96E5C500C6CBEB /* MMTabBarView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MMTabBarView.framework; sourceTree = "<group>"; };
+		EB2D016B1E96E7E100C6CBEB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EB2F22DA1E79E00400CBB0C3 /* boobooksnmp2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = boobooksnmp2.entitlements; sourceTree = "<group>"; };
+		EB2F32521E81D4FE00713DDF /* AgentBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgentBoxViewController.h; sourceTree = "<group>"; };
+		EB2F32531E81D4FE00713DDF /* AgentBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgentBoxViewController.m; sourceTree = "<group>"; };
+		EB30DEA11E6BF90500247DFB /* BookmarksViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksViewController.h; sourceTree = "<group>"; };
+		EB30DEA21E6BF90500247DFB /* BookmarksViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksViewController.m; sourceTree = "<group>"; };
+		EB87B06D1E8A308D00D2F113 /* UrlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UrlViewController.h; sourceTree = "<group>"; };
+		EB87B06E1E8A308D00D2F113 /* UrlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UrlViewController.m; sourceTree = "<group>"; };
+		EB87B06F1E8A308D00D2F113 /* UrlViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UrlViewController.xib; sourceTree = "<group>"; };
+		EB87B0721E8A341800D2F113 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		EB9AF0B81E80C7D600D6613F /* Bbs2SnmpRequestHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bbs2SnmpRequestHandler.h; sourceTree = "<group>"; };
+		EB9AF0B91E80C7D600D6613F /* Bbs2SnmpRequestHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bbs2SnmpRequestHandler.m; sourceTree = "<group>"; };
+		EB9AF0BC1E80F64C00D6613F /* Bbs2SnmpOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bbs2SnmpOperation.h; sourceTree = "<group>"; };
+		EB9AF0BD1E80F64C00D6613F /* Bbs2SnmpOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bbs2SnmpOperation.m; sourceTree = "<group>"; };
+		EB9E66711E932B8500201356 /* MibFilesArrayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MibFilesArrayController.h; sourceTree = "<group>"; };
+		EB9E66721E932B8500201356 /* MibFilesArrayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MibFilesArrayController.m; sourceTree = "<group>"; };
+		EB9E66741E94077000201356 /* GNUGPLv3.0.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = GNUGPLv3.0.html; sourceTree = "<group>"; };
+		EBB200391E8F200600A9E676 /* BOBK.ico */ = {isa = PBXFileReference; lastKnownFileType = image.ico; path = BOBK.ico; sourceTree = "<group>"; };
+		EBB2003A1E8F200600A9E676 /* BooBookSNMP Help.helpindex */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BooBookSNMP Help.helpindex"; sourceTree = "<group>"; };
+		EBB2003B1E8F200600A9E676 /* BooBookSNMP_Help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMP_Help.html; sourceTree = "<group>"; };
+		EBB2003C1E8F200600A9E676 /* BooBookSNMP_Help_Menu.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMP_Help_Menu.html; sourceTree = "<group>"; };
+		EBB2003D1E8F200600A9E676 /* BooBookSNMPAck.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPAck.html; sourceTree = "<group>"; };
+		EBB2003E1E8F200600A9E676 /* BooBookSNMPagentview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPagentview.html; sourceTree = "<group>"; };
+		EBB2003F1E8F200600A9E676 /* BooBookSNMPBookmarks.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPBookmarks.html; sourceTree = "<group>"; };
+		EBB200401E8F200600A9E676 /* Boobooksnmp2GettingStarted.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Boobooksnmp2GettingStarted.html; sourceTree = "<group>"; };
+		EBB200411E8F200600A9E676 /* BooBookSNMPLicense.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPLicense.html; sourceTree = "<group>"; };
+		EBB200421E8F200600A9E676 /* BooBookSNMPmibtree.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPmibtree.html; sourceTree = "<group>"; };
+		EBB200441E8F200600A9E676 /* BooBookSNMPpreferences.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPpreferences.html; sourceTree = "<group>"; };
+		EBB200471E8F200600A9E676 /* BooBookSNMPsnmpfunctions.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPsnmpfunctions.html; sourceTree = "<group>"; };
+		EBB200481E8F200600A9E676 /* BooBookSNMPtabbedview.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BooBookSNMPtabbedview.html; sourceTree = "<group>"; };
+		EBB200491E8F200600A9E676 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		EBB2006D1E8F47F800A9E676 /* LogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogView.h; sourceTree = "<group>"; };
+		EBB2006E1E8F47F800A9E676 /* LogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogView.m; sourceTree = "<group>"; };
+		EBB2006F1E8F47F800A9E676 /* LogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LogView.xib; sourceTree = "<group>"; };
+		EBB200731E91989300A9E676 /* Boobooksnmp2Home.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Boobooksnmp2Home.html; sourceTree = "<group>"; };
+		EBB200761E91A1E500A9E676 /* Boobooksnmp2ReportingIssues.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Boobooksnmp2ReportingIssues.html; sourceTree = "<group>"; };
+		EBB2FFED1E8EE98C00A9E676 /* MMTabBarModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMTabBarModel.h; sourceTree = "<group>"; };
+		EBB2FFEE1E8EE98C00A9E676 /* MMTabBarModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMTabBarModel.m; sourceTree = "<group>"; };
+		EBB559791E86EC1000A623DD /* BookmarksTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookmarksTreeItem.h; sourceTree = "<group>"; };
+		EBB5597A1E86EC1000A623DD /* BookmarksTreeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookmarksTreeItem.m; sourceTree = "<group>"; };
+		EBB8336F1E68DFC100BD8B7A /* MIBTreeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIBTreeViewController.h; sourceTree = "<group>"; };
+		EBB833701E68DFC100BD8B7A /* MIBTreeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIBTreeViewController.m; sourceTree = "<group>"; };
+		EBB833721E69DA0300BD8B7A /* Bbs2NetSnmp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bbs2NetSnmp.h; sourceTree = "<group>"; };
+		EBB833731E69DA0300BD8B7A /* Bbs2NetSnmp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bbs2NetSnmp.m; sourceTree = "<group>"; };
+		EBB833751E6A6AD000BD8B7A /* MIBTreeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIBTreeItem.h; sourceTree = "<group>"; };
+		EBB833761E6A6AD000BD8B7A /* MIBTreeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIBTreeItem.m; sourceTree = "<group>"; };
+		EBB8337C1E6B6BF200BD8B7A /* libnetsnmp.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libnetsnmp.tbd; path = usr/lib/libnetsnmp.tbd; sourceTree = SDKROOT; };
+		EBDA9C321E958A8E0060725C /* OidTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OidTabBarController.h; sourceTree = "<group>"; };
+		EBDA9C331E958A8E0060725C /* OidTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OidTabBarController.m; sourceTree = "<group>"; };
+		EBF50FA41E786E0A00FF04DD /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		EBF50FA51E786E0A00FF04DD /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		EBF50FA61E786E0A00FF04DD /* PreferencesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB1C876D1E68BF7600E38915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB87B0731E8A341800D2F113 /* WebKit.framework in Frameworks */,
+				EB2D01691E96E5C500C6CBEB /* MMTabBarView.framework in Frameworks */,
+				EBB8337D1E6B6BF200BD8B7A /* libnetsnmp.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C87801E68BF7600E38915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C878B1E68BF7600E38915 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB1C87671E68BF7600E38915 = {
+			isa = PBXGroup;
+			children = (
+				EBB8337B1E6B6B1000BD8B7A /* Frameworks */,
+				EB1C87721E68BF7600E38915 /* boobooksnmp2 */,
+				EB1C87861E68BF7600E38915 /* boobooksnmp2Tests */,
+				EB1C87911E68BF7600E38915 /* boobooksnmp2UITests */,
+				EB1C87711E68BF7600E38915 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB1C87711E68BF7600E38915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C87701E68BF7600E38915 /* boobooksnmp2.app */,
+				EB1C87831E68BF7600E38915 /* boobooksnmp2Tests.xctest */,
+				EB1C878E1E68BF7600E38915 /* boobooksnmp2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB1C87721E68BF7600E38915 /* boobooksnmp2 */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F22DA1E79E00400CBB0C3 /* boobooksnmp2.entitlements */,
+				EB1C87791E68BF7600E38915 /* Assets.xcassets */,
+				EBB200381E8F200600A9E676 /* BooBookSNMP.help */,
+				EB9AF0BB1E80F4E900D6613F /* Bbs2 SNMP */,
+				EBB5597C1E86EC2200A623DD /* BookMarks View */,
+				EB87B0741E8A45AC00D2F113 /* Agent Box */,
+				EB9AF0B21E80645800D6613F /* MIB Tree View */,
+				EB9AF0B11E80643F00D6613F /* Tab View */,
+				EB9AF0B01E8062E700D6613F /* Query Table View */,
+				EB87B0671E8A303800D2F113 /* URL View */,
+				EBB200721E8F47FE00A9E676 /* Log View */,
+				EB9AF0AF1E8062D000D6613F /* MIB File View */,
+				EB9AF0AE1E8062AE00D6613F /* Preferences View */,
+				EB1C87731E68BF7600E38915 /* AppDelegate.h */,
+				EB1C87741E68BF7600E38915 /* AppDelegate.m */,
+				EB1C877B1E68BF7600E38915 /* MainMenu.xib */,
+				EB1C877E1E68BF7600E38915 /* Info.plist */,
+				EB1C87761E68BF7600E38915 /* Supporting Files */,
+			);
+			path = boobooksnmp2;
+			sourceTree = "<group>";
+		};
+		EB1C87761E68BF7600E38915 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C87771E68BF7600E38915 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB1C87861E68BF7600E38915 /* boobooksnmp2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C87871E68BF7600E38915 /* boobooksnmp2Tests.m */,
+				EB1C87891E68BF7600E38915 /* Info.plist */,
+			);
+			path = boobooksnmp2Tests;
+			sourceTree = "<group>";
+		};
+		EB1C87911E68BF7600E38915 /* boobooksnmp2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				EB1C87921E68BF7600E38915 /* boobooksnmp2UITests.m */,
+				EB1C87941E68BF7600E38915 /* Info.plist */,
+			);
+			path = boobooksnmp2UITests;
+			sourceTree = "<group>";
+		};
+		EB87B0671E8A303800D2F113 /* URL View */ = {
+			isa = PBXGroup;
+			children = (
+				EB87B06D1E8A308D00D2F113 /* UrlViewController.h */,
+				EB87B06E1E8A308D00D2F113 /* UrlViewController.m */,
+				EB87B06F1E8A308D00D2F113 /* UrlViewController.xib */,
+			);
+			name = "URL View";
+			sourceTree = "<group>";
+		};
+		EB87B0741E8A45AC00D2F113 /* Agent Box */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F32521E81D4FE00713DDF /* AgentBoxViewController.h */,
+				EB2F32531E81D4FE00713DDF /* AgentBoxViewController.m */,
+				EBDA9C321E958A8E0060725C /* OidTabBarController.h */,
+				EBDA9C331E958A8E0060725C /* OidTabBarController.m */,
+			);
+			name = "Agent Box";
+			sourceTree = "<group>";
+		};
+		EB9AF0AE1E8062AE00D6613F /* Preferences View */ = {
+			isa = PBXGroup;
+			children = (
+				EB9E66711E932B8500201356 /* MibFilesArrayController.h */,
+				EB9E66721E932B8500201356 /* MibFilesArrayController.m */,
+				EBF50FA41E786E0A00FF04DD /* PreferencesViewController.h */,
+				EBF50FA51E786E0A00FF04DD /* PreferencesViewController.m */,
+				EBF50FA61E786E0A00FF04DD /* PreferencesViewController.xib */,
+			);
+			name = "Preferences View";
+			sourceTree = "<group>";
+		};
+		EB9AF0AF1E8062D000D6613F /* MIB File View */ = {
+			isa = PBXGroup;
+			children = (
+				EB270F5F1E71E23500199E17 /* FileViewController.h */,
+				EB270F601E71E23500199E17 /* FileViewController.m */,
+				EB270F611E71E23500199E17 /* FileViewController.xib */,
+			);
+			name = "MIB File View";
+			sourceTree = "<group>";
+		};
+		EB9AF0B01E8062E700D6613F /* Query Table View */ = {
+			isa = PBXGroup;
+			children = (
+				EB270F571E7130B700199E17 /* QueryTableViewController.h */,
+				EB270F581E7130B700199E17 /* QueryTableViewController.m */,
+				EB270F591E7130B700199E17 /* QueryTableViewController.xib */,
+			);
+			name = "Query Table View";
+			sourceTree = "<group>";
+		};
+		EB9AF0B11E80643F00D6613F /* Tab View */ = {
+			isa = PBXGroup;
+			children = (
+				EB14B4BC1E6E3089004D4F14 /* TabViewItem.h */,
+				EB14B4BD1E6E3089004D4F14 /* TabViewItem.m */,
+				EB270F5C1E71DAB500199E17 /* TabViewController.h */,
+				EB270F5D1E71DAB500199E17 /* TabViewController.m */,
+				EBB2FFED1E8EE98C00A9E676 /* MMTabBarModel.h */,
+				EBB2FFEE1E8EE98C00A9E676 /* MMTabBarModel.m */,
+			);
+			name = "Tab View";
+			sourceTree = "<group>";
+		};
+		EB9AF0B21E80645800D6613F /* MIB Tree View */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8336F1E68DFC100BD8B7A /* MIBTreeViewController.h */,
+				EBB833701E68DFC100BD8B7A /* MIBTreeViewController.m */,
+				EBB833751E6A6AD000BD8B7A /* MIBTreeItem.h */,
+				EBB833761E6A6AD000BD8B7A /* MIBTreeItem.m */,
+				EB02FEFC1E886A4E00E7E342 /* MIBTreeTreeController.h */,
+				EB02FEFD1E886A4E00E7E342 /* MIBTreeTreeController.m */,
+			);
+			name = "MIB Tree View";
+			sourceTree = "<group>";
+		};
+		EB9AF0BB1E80F4E900D6613F /* Bbs2 SNMP */ = {
+			isa = PBXGroup;
+			children = (
+				EBB833721E69DA0300BD8B7A /* Bbs2NetSnmp.h */,
+				EBB833731E69DA0300BD8B7A /* Bbs2NetSnmp.m */,
+				EB9AF0B81E80C7D600D6613F /* Bbs2SnmpRequestHandler.h */,
+				EB9AF0B91E80C7D600D6613F /* Bbs2SnmpRequestHandler.m */,
+				EB9AF0BC1E80F64C00D6613F /* Bbs2SnmpOperation.h */,
+				EB9AF0BD1E80F64C00D6613F /* Bbs2SnmpOperation.m */,
+			);
+			name = "Bbs2 SNMP";
+			sourceTree = "<group>";
+		};
+		EBB200381E8F200600A9E676 /* BooBookSNMP.help */ = {
+			isa = PBXGroup;
+			children = (
+				EBB200391E8F200600A9E676 /* BOBK.ico */,
+				EBB2003A1E8F200600A9E676 /* BooBookSNMP Help.helpindex */,
+				EBB2003B1E8F200600A9E676 /* BooBookSNMP_Help.html */,
+				EBB200491E8F200600A9E676 /* index.html */,
+				EBB2003C1E8F200600A9E676 /* BooBookSNMP_Help_Menu.html */,
+				EBB200401E8F200600A9E676 /* Boobooksnmp2GettingStarted.html */,
+				EBB200761E91A1E500A9E676 /* Boobooksnmp2ReportingIssues.html */,
+				EBB200731E91989300A9E676 /* Boobooksnmp2Home.html */,
+				EBB2003F1E8F200600A9E676 /* BooBookSNMPBookmarks.html */,
+				EBB200421E8F200600A9E676 /* BooBookSNMPmibtree.html */,
+				EBB2003E1E8F200600A9E676 /* BooBookSNMPagentview.html */,
+				EBB200481E8F200600A9E676 /* BooBookSNMPtabbedview.html */,
+				EBB200441E8F200600A9E676 /* BooBookSNMPpreferences.html */,
+				EBB200471E8F200600A9E676 /* BooBookSNMPsnmpfunctions.html */,
+				EBB200411E8F200600A9E676 /* BooBookSNMPLicense.html */,
+				EB9E66741E94077000201356 /* GNUGPLv3.0.html */,
+				EBB2003D1E8F200600A9E676 /* BooBookSNMPAck.html */,
+			);
+			name = BooBookSNMP.help;
+			path = "BooBookSNMP Help";
+			sourceTree = "<group>";
+		};
+		EBB200721E8F47FE00A9E676 /* Log View */ = {
+			isa = PBXGroup;
+			children = (
+				EBB2006D1E8F47F800A9E676 /* LogView.h */,
+				EBB2006E1E8F47F800A9E676 /* LogView.m */,
+				EBB2006F1E8F47F800A9E676 /* LogView.xib */,
+			);
+			name = "Log View";
+			sourceTree = "<group>";
+		};
+		EBB5597C1E86EC2200A623DD /* BookMarks View */ = {
+			isa = PBXGroup;
+			children = (
+				EB30DEA11E6BF90500247DFB /* BookmarksViewController.h */,
+				EB30DEA21E6BF90500247DFB /* BookmarksViewController.m */,
+				EBB559791E86EC1000A623DD /* BookmarksTreeItem.h */,
+				EBB5597A1E86EC1000A623DD /* BookmarksTreeItem.m */,
+				EB02FEF91E88245F00E7E342 /* BookmarksTreeController.h */,
+				EB02FEFA1E88245F00E7E342 /* BookmarksTreeController.m */,
+			);
+			name = "BookMarks View";
+			sourceTree = "<group>";
+		};
+		EBB8337B1E6B6B1000BD8B7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB2D016B1E96E7E100C6CBEB /* QuartzCore.framework */,
+				EB2D01681E96E5C500C6CBEB /* MMTabBarView.framework */,
+				EB87B0721E8A341800D2F113 /* WebKit.framework */,
+				EBB8337C1E6B6BF200BD8B7A /* libnetsnmp.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB1C876F1E68BF7600E38915 /* boobooksnmp2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1C87971E68BF7600E38915 /* Build configuration list for PBXNativeTarget "boobooksnmp2" */;
+			buildPhases = (
+				EB1C876C1E68BF7600E38915 /* Sources */,
+				EB1C876D1E68BF7600E38915 /* Frameworks */,
+				EB1C876E1E68BF7600E38915 /* Resources */,
+				EB2F325F1E81E22900713DDF /* CopyFiles */,
+				EBB2005B1E8F207100A9E676 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = boobooksnmp2;
+			productName = boobooksnmp2;
+			productReference = EB1C87701E68BF7600E38915 /* boobooksnmp2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EB1C87821E68BF7600E38915 /* boobooksnmp2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1C879A1E68BF7600E38915 /* Build configuration list for PBXNativeTarget "boobooksnmp2Tests" */;
+			buildPhases = (
+				EB1C877F1E68BF7600E38915 /* Sources */,
+				EB1C87801E68BF7600E38915 /* Frameworks */,
+				EB1C87811E68BF7600E38915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1C87851E68BF7600E38915 /* PBXTargetDependency */,
+			);
+			name = boobooksnmp2Tests;
+			productName = boobooksnmp2Tests;
+			productReference = EB1C87831E68BF7600E38915 /* boobooksnmp2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EB1C878D1E68BF7600E38915 /* boobooksnmp2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB1C879D1E68BF7600E38915 /* Build configuration list for PBXNativeTarget "boobooksnmp2UITests" */;
+			buildPhases = (
+				EB1C878A1E68BF7600E38915 /* Sources */,
+				EB1C878B1E68BF7600E38915 /* Frameworks */,
+				EB1C878C1E68BF7600E38915 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB1C87901E68BF7600E38915 /* PBXTargetDependency */,
+			);
+			name = boobooksnmp2UITests;
+			productName = boobooksnmp2UITests;
+			productReference = EB1C878E1E68BF7600E38915 /* boobooksnmp2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB1C87681E68BF7600E38915 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = boobooksnmp;
+				TargetAttributes = {
+					EB1C876F1E68BF7600E38915 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					EB1C87821E68BF7600E38915 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB1C876F1E68BF7600E38915;
+					};
+					EB1C878D1E68BF7600E38915 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = EB1C876F1E68BF7600E38915;
+					};
+				};
+			};
+			buildConfigurationList = EB1C876B1E68BF7600E38915 /* Build configuration list for PBXProject "boobooksnmp2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB1C87671E68BF7600E38915;
+			productRefGroup = EB1C87711E68BF7600E38915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB1C876F1E68BF7600E38915 /* boobooksnmp2 */,
+				EB1C87821E68BF7600E38915 /* boobooksnmp2Tests */,
+				EB1C878D1E68BF7600E38915 /* boobooksnmp2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB1C876E1E68BF7600E38915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1C877A1E68BF7600E38915 /* Assets.xcassets in Resources */,
+				EBF50FA81E786E0A00FF04DD /* PreferencesViewController.xib in Resources */,
+				EB87B0711E8A308D00D2F113 /* UrlViewController.xib in Resources */,
+				EB1C877D1E68BF7600E38915 /* MainMenu.xib in Resources */,
+				EB270F631E71E23500199E17 /* FileViewController.xib in Resources */,
+				EB270F5B1E7130B700199E17 /* QueryTableViewController.xib in Resources */,
+				EBB200711E8F47F800A9E676 /* LogView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C87811E68BF7600E38915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C878C1E68BF7600E38915 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB1C876C1E68BF7600E38915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB9AF0BE1E80F64C00D6613F /* Bbs2SnmpOperation.m in Sources */,
+				EBB2FFEF1E8EE98C00A9E676 /* MMTabBarModel.m in Sources */,
+				EB02FEFB1E88245F00E7E342 /* BookmarksTreeController.m in Sources */,
+				EB30DEA31E6BF90500247DFB /* BookmarksViewController.m in Sources */,
+				EB270F5A1E7130B700199E17 /* QueryTableViewController.m in Sources */,
+				EB1C87781E68BF7600E38915 /* main.m in Sources */,
+				EBB200701E8F47F800A9E676 /* LogView.m in Sources */,
+				EBF50FA71E786E0A00FF04DD /* PreferencesViewController.m in Sources */,
+				EB14B4BE1E6E3089004D4F14 /* TabViewItem.m in Sources */,
+				EB02FEFE1E886A4E00E7E342 /* MIBTreeTreeController.m in Sources */,
+				EB9E66731E932B8500201356 /* MibFilesArrayController.m in Sources */,
+				EBB5597B1E86EC1000A623DD /* BookmarksTreeItem.m in Sources */,
+				EB9AF0BA1E80C7D600D6613F /* Bbs2SnmpRequestHandler.m in Sources */,
+				EB270F5E1E71DAB500199E17 /* TabViewController.m in Sources */,
+				EBDA9C341E958A8E0060725C /* OidTabBarController.m in Sources */,
+				EB270F621E71E23500199E17 /* FileViewController.m in Sources */,
+				EB87B0701E8A308D00D2F113 /* UrlViewController.m in Sources */,
+				EB1C87751E68BF7600E38915 /* AppDelegate.m in Sources */,
+				EBB833741E69DA0300BD8B7A /* Bbs2NetSnmp.m in Sources */,
+				EBB833711E68DFC100BD8B7A /* MIBTreeViewController.m in Sources */,
+				EB2F32541E81D4FE00713DDF /* AgentBoxViewController.m in Sources */,
+				EBB833771E6A6AD000BD8B7A /* MIBTreeItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C877F1E68BF7600E38915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1C87881E68BF7600E38915 /* boobooksnmp2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB1C878A1E68BF7600E38915 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1C87931E68BF7600E38915 /* boobooksnmp2UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB1C87851E68BF7600E38915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1C876F1E68BF7600E38915 /* boobooksnmp2 */;
+			targetProxy = EB1C87841E68BF7600E38915 /* PBXContainerItemProxy */;
+		};
+		EB1C87901E68BF7600E38915 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB1C876F1E68BF7600E38915 /* boobooksnmp2 */;
+			targetProxy = EB1C878F1E68BF7600E38915 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EB1C877B1E68BF7600E38915 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB1C877C1E68BF7600E38915 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB1C87951E68BF7600E38915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EB1C87961E68BF7600E38915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EB1C87981E68BF7600E38915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"BUNDLE_LOADER[arch=*]" = "";
+				CODE_SIGN_ENTITLEMENTS = boobooksnmp2/boobooksnmp2.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = boobooksnmp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = boobooksnmp.boobooksnmp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Debug;
+		};
+		EB1C87991E68BF7600E38915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"BUNDLE_LOADER[arch=*]" = "";
+				CODE_SIGN_ENTITLEMENTS = boobooksnmp2/boobooksnmp2.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = boobooksnmp2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = boobooksnmp.boobooksnmp2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = x86_64;
+			};
+			name = Release;
+		};
+		EB1C879B1E68BF7600E38915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = boobooksnmp2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boobooksnmp.boobooksnmp2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boobooksnmp2.app/Contents/MacOS/boobooksnmp2";
+			};
+			name = Debug;
+		};
+		EB1C879C1E68BF7600E38915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = boobooksnmp2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boobooksnmp.boobooksnmp2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boobooksnmp2.app/Contents/MacOS/boobooksnmp2";
+			};
+			name = Release;
+		};
+		EB1C879E1E68BF7600E38915 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = boobooksnmp2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boobooksnmp.boobooksnmp2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = boobooksnmp2;
+			};
+			name = Debug;
+		};
+		EB1C879F1E68BF7600E38915 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = boobooksnmp2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = boobooksnmp.boobooksnmp2UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = boobooksnmp2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB1C876B1E68BF7600E38915 /* Build configuration list for PBXProject "boobooksnmp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C87951E68BF7600E38915 /* Debug */,
+				EB1C87961E68BF7600E38915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1C87971E68BF7600E38915 /* Build configuration list for PBXNativeTarget "boobooksnmp2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C87981E68BF7600E38915 /* Debug */,
+				EB1C87991E68BF7600E38915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1C879A1E68BF7600E38915 /* Build configuration list for PBXNativeTarget "boobooksnmp2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C879B1E68BF7600E38915 /* Debug */,
+				EB1C879C1E68BF7600E38915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB1C879D1E68BF7600E38915 /* Build configuration list for PBXNativeTarget "boobooksnmp2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB1C879E1E68BF7600E38915 /* Debug */,
+				EB1C879F1E68BF7600E38915 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB1C87681E68BF7600E38915 /* Project object */;
+}
