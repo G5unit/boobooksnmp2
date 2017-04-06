@@ -1,0 +1,30 @@
+<html>
+    <head>
+    <title>Boobooksnmp2 MIB Object Tree</title>
+    </head>
+<body>
+    <div style="text-align: center; color: rgb(51, 0, 0);">
+        <h1 style="background-color: white;">Boobooksnmp2</h1>
+    </div>
+    <h2>MIB Object Tree</h2>
+
+MIB tree displays Objects read in by
+libnetsnmp. MIB files read in are set in Preferences.<br>
+Selecting an Object in the MIB tree will populate that object information in the Object section.<br>
+
+<h3><a name="Loading MIBs"></a>Loading MIBs</h3>
+MIBs are loaded in the order listed in Preferences. Per libnetsnmp behavior, last file read in that defines a SNMP Modue replaces any previous Module definition loaded. Use the Object "File" field to see which Module and MIB file OID definition comes from.<br>
+<br>
+If present, MIB file load errors are reported in Log View. Level of output depends on Log Level set in Preferences. Errors are repoted in order MIB files are read in and is a good
+way to troubleshoot MIB files, as well as load order.<br>
+Having an error reported that a module could not be found does not necesseraly mean that
+Module was not loaded. Applciation (libnetsnmp) attempts to adopt Modules at the end of reading in all MB files, ones it could not at MIB file read time.
+
+<h3><a name="Search"></a>Search</h3>
+Search field above the MIB Object tree is used to search for an Object by string of characters.
+Search function uses libnetsnmp "find_oid_in_tree()" function which searches for "^Begins with<seach string>".<br>
+Selecting an object from the list will highlight it in MIB Object Tree.<br>
+Search results returned are limited to 512 entries.<br>
+
+</body>
+</html>

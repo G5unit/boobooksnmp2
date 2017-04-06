@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Boobooksnmp2</title>
+    </head>
+<body>
+    <div style="text-align: center; color: rgb(51, 0, 0);">
+        <h1 style="background-color: white;">Boobooksnmp2</h1>
+    </div>
+<h3>Getting started</h3>
+
+<h4>Toolbar</h4>
+If not already, choose to display the app toolbar. It contains buttons for app functionality, amongst others manipulating bookmarks, running SNMP queries, opening Log and Preferences views.
+
+<h4>Load MIB Objects</h4>
+By default there are no SNMP Modules loaded. Open Preferences View, using toolbar icon or "Boobooksnmp2->Preferences" menu item, and add MIB files to "MIB Library". Mac has some MIB files present on the system in "/usr/share/snmp/mibs" directory. Loading "SNMPv2-SMI.txt" will give you the base SNMP objects loaded.<br>
+Open a LogView to see any errors reported loading SNMP Objects. Change the error log level in Preferences, and reload the MIB tree to see more or less log output.
+
+<h4>Browse MIB Tree</h4>
+Once you have some objects loaded browse the Object structure in the MIB tree. Observe how values change in the Object Box fileds on selection change. Select an object and use "MIB File" toolbar icon to open a text view of the file object was loaded from. CTRL+F opens the "search for text" option.
+
+<h4>Bookmark some Agents and Objects</h4>
+<b>NOTE!!!
+Bookmarks are saved as user application preferences using OSX mechanisms. This mechanism does not use encryption. Future versions will hopefully use OS X keychain for secure storage of bookmarks.</b>
+<br>
+<br>
+
+Bookmark agents and objects for easy access to them. Dragging an OID from MIB Tree to Bookmarks area will create a bookmark for that OID. Doubleclicking on the agent or object will populate those values in the Agent Box and Object Box fields.
+Dragging a URL from your browser will create a URL bookmark.
+
+<h4>Run some SNMP queries</h4>
+Perform SNNP operations and examine the output in Query results tab view. Add a new Query Results tab and run some more operations.<br>
+OID Object field could be edited by selecting it, useful for adding index values to objects, or just pasting in your own oid.<br>
+
+
+</body>
+</html>
