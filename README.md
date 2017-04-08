@@ -19,6 +19,6 @@ files at a snap, be able to search for Objects by string, be able to
 provide bookmark functionality, and provide snmp functions such as get,
 walk, set.
 
-__Download__
-
 - [Binary Release available under Releases](https://github.com/G5unit/boobooksnmp2/releases)
+
+- See wiki for [Getting started with the App](https://github.com/G5unit/boobooksnmp2/wiki)
