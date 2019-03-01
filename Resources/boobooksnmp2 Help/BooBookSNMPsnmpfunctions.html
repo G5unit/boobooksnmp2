@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Boobooksnmp2 SNMP Functions</title>
+    </head>
+    <body>
+        <div style="text-align: center; color: rgb(51, 0, 0);">
+            <h1 style="background-color: white;">Boobooksnmp2</h1>
+        </div>
+        
+<h2>SNMP Functions</h2>
+<ul>
+  <li><a href="#Get">Get</a></li>
+  <li><a href="#Walk">Walk</a></li>
+  <li><a href="#Get_Next">Get Next</a></li>
+  <li><a href="#Set">Set</a></li>
+  <li><a href="#Get_Bulk">Get Bulk</a></li>
+  <li><a href="#Cancel_All_Requests">Cancel All Requests</a></li>
+</ul>
+Basic set of SNMP functions is supported. Requests are threaded for simultaneous execution. <br>
+All output is displayed in Query Results View.<br>
+<h3><a name="Get"></a>Get</h3>
+Executes a SNMP Get request for data in Agent View and Object view.<br>
+<h3><a name="Walk"></a>Walk</h3>
+Executes a SNMP Walk request for data in Agent View and Object view.
+SNMP walk function executes successive snmp get next requests and these
+requests are sequential, that is one thread is created for snmp walk
+function that in turn executes synchronous(one at a time) snmp get next
+request.<br>
+<br>
+<h3><a name="Get_Next"></a>Get Next</h3>
+Executes a SNMP Get Next request for data in Agent View and Object view.<br>
+<h3><a name="Set"></a>Set</h3>
+Executes SNMP Set request for date in Agenet View and Object View.<br>
+<h3><a name="Get_Bulk"></a>Get Bulk</h3>
+SNMP Bulk implementation is done as to enable ability to query multiple
+Agents for multiple Objects. Selecting this action will trigger
+collection of all Agents and Objects selected in Bookmarks View and
+executing (queuing) of SNMP GET request for each Agent for each Object.
+All requests are threaded and are executed as fast as the OS can
+process them.<br>
+Selecting a Folder in Bookmark View means you are selecting all Agents and Objects in that Folder.<br>
+<h3><a name="Cancel_All_Requests"></a>Cancel All Requests</h3>
+SNMP requests are threaded so each request is queued and executed in
+background. This has flexibility to schedule multiple requests and not
+have to wait until first task finished executing. Results are populated
+in current Query Results View in order tasks are finished executing. As
+a consequence to cancel a request means stopping all requests, and
+suppressing any further output. <br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+</body></html>
