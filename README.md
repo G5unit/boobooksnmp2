@@ -15,7 +15,7 @@ __Aims To Accomplish__
 
 Boobooksnmp2 aims to provide a flexible interface to many tasks involved
 with SNMP. A fast loading application that can handle thousands of MIB
-files at a snap, be able to search for Objects by string, be able to
+files at a snap, be able to search for Objects by string,
 provide bookmark functionality, and provide snmp functions such as get,
 walk, set.
 
