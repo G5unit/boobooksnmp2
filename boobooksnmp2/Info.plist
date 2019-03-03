@@ -7,9 +7,9 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleHelpBookFolder</key>
-	<string>boobooksnmp2 Help</string>
+	<string>boobooksnmp2Help.help</string>
 	<key>CFBundleHelpBookName</key>
-	<string>boobooksnmp2 Help</string>
+	<string>boobooksnmp2Help</string>
 	<key>CFBundleIconFile</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
