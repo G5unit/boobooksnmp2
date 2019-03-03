@@ -29,7 +29,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do view setup here.
+    
     NSString * nserr = [self loadTree];
     if(nserr) {
         NSDictionary * startErrNotice = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate date],@"timestamp",
@@ -37,18 +39,26 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Bbs2SnmpLogMessagePosted" object:nil userInfo:startErrNotice];
 
     } else {
+        //Post net-snmp library version found
+        NSString * netsnmpversion = [self.bbs2NetSnmp getNetSnmpVersion];
+        NSDictionary * netsnmpVersionNotice = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate date],@"timestamp",
+                                               [NSString stringWithFormat:@"[Bbs2] NET-SNMP version found is %@",netsnmpversion],@"message", nil];
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"Bbs2SnmpLogMessagePosted" object:nil userInfo:netsnmpVersionNotice];
+        
+        // Post MIB Tree loaded message
         NSDictionary * startNotice = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate date],@"timestamp",
                                       [NSString stringWithFormat:@"[Bbs2] MIB Tree Loaded"],@"message", nil];
                                       [[NSNotificationCenter defaultCenter] postNotificationName:@"Bbs2SnmpLogMessagePosted" object:nil userInfo:startNotice];
-
-    //Post files parsed and objects in MIB tree count to Log.
+        
+        //Post number of files parsed for objects
         NSInteger fsct = 0;
         NSArray * filesParsedCount = [NSKeyedUnarchiver unarchiveObjectWithData:[[NSUserDefaults standardUserDefaults] objectForKey:@"BBS2SavedMibLibrary"]];
         if(filesParsedCount) { fsct = [filesParsedCount count]; }
         NSDictionary * fileCountNotice = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate date],@"timestamp",
                                       [NSString stringWithFormat:@"[Bbs2] MIB files parsed: %li",(long)fsct],@"message", nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Bbs2SnmpLogMessagePosted" object:nil userInfo:fileCountNotice];
-    
+ 
+        //Post number of objects in Tree
         NSDictionary * objectCountNotice = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate date],@"timestamp",
                                         [NSString stringWithFormat:@"[Bbs2] MIB Tree Object count: %i",[MIBTreeItem objectCountValue]],@"message", nil];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Bbs2SnmpLogMessagePosted" object:nil userInfo:objectCountNotice];

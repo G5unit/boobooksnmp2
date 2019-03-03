@@ -286,6 +286,7 @@
 		EB9534222227988500AE34C1 /* boobooksnmp2.profdata */ = {isa = PBXFileReference; lastKnownFileType = file; path = boobooksnmp2.profdata; sourceTree = "<group>"; };
 		EB953431222866D600AE34C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
 		EBD1D41E222B72DB00C0BE7D /* boobooksnmp2Help.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = boobooksnmp2Help.help; sourceTree = "<group>"; };
+		EBD1D420222B81F400C0BE7D /* ToDO.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ToDO.rtf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,6 +312,7 @@
 		EB9531F322274E5D00AE34C1 = {
 			isa = PBXGroup;
 			children = (
+				EBD1D420222B81F400C0BE7D /* ToDO.rtf */,
 				EBD1D41E222B72DB00C0BE7D /* boobooksnmp2Help.help */,
 				EB9531FE22274E5D00AE34C1 /* boobooksnmp2 */,
 				EB95321622274EE000AE34C1 /* MMTabBarView */,
@@ -938,6 +940,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.2martians.boobooksnmp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -964,6 +967,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = com.2martians.boobooksnmp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

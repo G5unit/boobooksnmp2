@@ -24,6 +24,7 @@
 
 #import <net-snmp/net-snmp-config.h>
 #import <net-snmp/net-snmp-includes.h>
+#import <net-snmp/version.h>
 
 @interface Bbs2NetSnmpRequest : NSObject
     @property NSDictionary * agent;
@@ -40,6 +41,7 @@
 @property (readonly) struct tree * rootNode;
 @property netsnmp_log_handler * bbs2logHandler;
 
+-(NSString *)getNetSnmpVersion;
 -(void)reInitNetSnmp;
 -(NSArray *)searchMibTree:(NSString *)searchString;
 

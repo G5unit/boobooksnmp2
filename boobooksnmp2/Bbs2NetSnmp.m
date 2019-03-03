@@ -44,6 +44,11 @@ int bbs2_log_callback(netsnmp_log_handler* logh, int pri, const char *str)
     return 1;
 }
 
+-(NSString *)getNetSnmpVersion {
+    
+    return [NSString stringWithUTF8String:netsnmp_get_version()];
+}
+
 -(void)startNetSnmp {
     NSString *userAppSupportDirectory;
     NSArray *directoryPath = NSSearchPathForDirectoriesInDomains (NSApplicationSupportDirectory, NSUserDomainMask, YES);
