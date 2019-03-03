@@ -34,5 +34,5 @@ walk, set.
 
 - [Binary Release available under Releases](https://github.com/G5unit/boobooksnmp2/releases)
 
-- See wiki for [Getting started with the boobooksnmp2](https://github.com/G5unit/boobooksnmp2/wiki)  <#Title#>
+- See wiki for [Getting started with the boobooksnmp2](https://github.com/G5unit/boobooksnmp2/wiki)
 
