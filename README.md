@@ -9,6 +9,7 @@ ___Mac OS X native cocoa UI for SNMP utilities and MIB browser___
 * Added libnetsnmp version detection at startup.
 * Added /usr/local/lib to LIBRARY SEARCH PATH so custom installations of libnetsnmp are used first (vs one that comes with macOS).
 
+
 ## Release 1.0
 * First release
 
