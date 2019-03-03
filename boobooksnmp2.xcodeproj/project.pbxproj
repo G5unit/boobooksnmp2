@@ -120,6 +120,7 @@
 		EB953348222756A500AE34C1 /* libnetsnmp.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = EB953347222756A500AE34C1 /* libnetsnmp.tbd */; };
 		EB9534332228676400AE34C1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB953430222866D600AE34C1 /* MainMenu.xib */; };
 		EBD1D41F222B72DB00C0BE7D /* boobooksnmp2Help.help in Resources */ = {isa = PBXBuildFile; fileRef = EBD1D41E222B72DB00C0BE7D /* boobooksnmp2Help.help */; };
+		EBD1D422222C67D900C0BE7D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EBD1D421222C67D900C0BE7D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -287,6 +288,7 @@
 		EB953431222866D600AE34C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MainMenu.xib; sourceTree = "<group>"; };
 		EBD1D41E222B72DB00C0BE7D /* boobooksnmp2Help.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = boobooksnmp2Help.help; sourceTree = "<group>"; };
 		EBD1D420222B81F400C0BE7D /* ToDO.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = ToDO.rtf; sourceTree = "<group>"; };
+		EBD1D421222C67D900C0BE7D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -312,6 +314,7 @@
 		EB9531F322274E5D00AE34C1 = {
 			isa = PBXGroup;
 			children = (
+				EBD1D421222C67D900C0BE7D /* README.md */,
 				EBD1D420222B81F400C0BE7D /* ToDO.rtf */,
 				EBD1D41E222B72DB00C0BE7D /* boobooksnmp2Help.help */,
 				EB9531FE22274E5D00AE34C1 /* boobooksnmp2 */,
@@ -690,6 +693,7 @@
 				EB9533262227514600AE34C1 /* LogView.xib in Resources */,
 				EB9533202227514600AE34C1 /* PreferencesViewController.xib in Resources */,
 				EB9533222227514600AE34C1 /* UrlViewController.xib in Resources */,
+				EBD1D422222C67D900C0BE7D /* README.md in Resources */,
 				EB95332C2227514600AE34C1 /* Assets.xcassets in Resources */,
 				EB9533452227514600AE34C1 /* QueryTableViewController.xib in Resources */,
 			);
