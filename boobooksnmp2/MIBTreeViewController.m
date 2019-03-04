@@ -39,6 +39,12 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"Bbs2SnmpLogMessagePosted" object:nil userInfo:startErrNotice];
 
     } else {
+        /* Check what Authentication & Privacy protocols are supported
+         * by found libnetsnmp, and set those arrays for UI menu use.
+         * Need libnetsnmp 5.8 for this to work.
+         */
+        
+        
         //Post net-snmp library version found
         NSString * netsnmpversion = [self.bbs2NetSnmp getNetSnmpVersion];
         NSDictionary * netsnmpVersionNotice = [NSDictionary dictionaryWithObjectsAndKeys:[NSDate date],@"timestamp",

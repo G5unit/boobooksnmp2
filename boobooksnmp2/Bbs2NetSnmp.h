@@ -24,6 +24,8 @@
 
 #import <net-snmp/net-snmp-config.h>
 #import <net-snmp/net-snmp-includes.h>
+#include <net-snmp/library/snmpusm.h>
+
 #import <net-snmp/version.h>
 
 @interface Bbs2NetSnmpRequest : NSObject
@@ -42,6 +44,12 @@
 @property netsnmp_log_handler * bbs2logHandler;
 
 -(NSString *)getNetSnmpVersion;
+/* Need more recent snmplib then 5.6.2.1, 5.8 does have these usm_lookup calls *
+ *
+ * -(NSArray *)getV3AuthProtocols;
+ * -(NSArray *)getV3PrivacyProtocols;
+ */
+
 -(void)reInitNetSnmp;
 -(NSArray *)searchMibTree:(NSString *)searchString;
 

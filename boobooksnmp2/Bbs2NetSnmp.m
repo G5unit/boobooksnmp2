@@ -48,6 +48,37 @@ int bbs2_log_callback(netsnmp_log_handler* logh, int pri, const char *str)
     
     return [NSString stringWithUTF8String:netsnmp_get_version()];
 }
+/* Need more recent snmplib then 5.6.2.1, 5.8 does have these usm_lookup calls */
+/*
+-(NSArray *)getV3AuthProtocols {
+    int authtypescount = 7;
+    const char* authtypes[7] = {
+        "MD5","SHA-1","SHA-192","SHA-224","SHA-256","SHA-348","SHA-512"
+    };
+    
+    NSArray * supportedTypes = [[NSArray alloc] init];
+    for(int i=0;i<authtypescount;i++) {
+       if(usm_lookup_auth_type(authtypes[i]) > 0) {
+          [ add  authtypes[i]  to array supportedTypes];
+       }
+    }
+    return supportedTypes;
+}
+ -(NSArray *)getV3PrivProtocols {
+ int privprotoscount = 7;
+ const char* privprotos[7] = {
+    "MD5","SHA-1","SHA-192","SHA-224","SHA-256","SHA-348","SHA-512"
+ };
+ 
+ NSArray * supportedProtos = [[NSArray alloc] init];
+ for(int i=0;i<privprotoscount;i++) {
+    if(usm_lookup_priv_type(privprotos[i]) > 0) {
+       [ add  privprotos[i]  to array supportedProtos];
+    }
+ }
+ return supportedProtos;
+ }
+ */
 
 -(void)startNetSnmp {
     NSString *userAppSupportDirectory;
@@ -397,7 +428,7 @@ int bbs2_log_callback(netsnmp_log_handler* logh, int pri, const char *str)
  
 }
 
-
+/* Handles following SNMP operations: GET, GETNEXT, SET */
 -(NSString *)snmpGetRequest:(Bbs2NetSnmpRequest *)requestData {
 
     void * bbss;
@@ -672,10 +703,6 @@ int bbs2_log_callback(netsnmp_log_handler* logh, int pri, const char *str)
         }
         //Populate values into display array
         for(snmpVars = boobookResponsePdu->variables; snmpVars; snmpVars = snmpVars->next_variable) {
-//            NSString * resultsString = [NSString stringWithFormat:@"Object name: %@  value: %@",
-//                                        [self oidToName:snmpVars->name withObjectLength:snmpVars->name_length],
-//                                        [self variableOidToName:snmpVars withObject:snmpVars->name withObjectLength:snmpVars->name_length]
-//                                        ];
             [resultsDict setObject:[self oidToName:snmpVars->name withObjectLength:snmpVars->name_length] forKey:@"resultObj"];
             [resultsDict setObject:[self variableOidToName:snmpVars withObject:snmpVars->name withObjectLength:snmpVars->name_length] forKey:@"resultValue"];
             [self addResultsToView:resultsDict];
